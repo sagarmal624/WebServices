@@ -1,4 +1,4 @@
-package com.sagarandcompany.webServices;
+package com.sagarandcompany.webServices.json;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
