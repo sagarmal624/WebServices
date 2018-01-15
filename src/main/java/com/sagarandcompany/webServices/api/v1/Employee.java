@@ -1,19 +1,16 @@
-package com.sagarandcompany.webServices.customAnnotation;
+package com.sagarandcompany.webServices.api.v1;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity()
-public class Student {
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
-    private Integer marks;
+    private Integer salary;
     private Integer age;
 
     private Date dob;
@@ -42,12 +39,12 @@ public class Student {
         this.name = name;
     }
 
-    public Integer getMarks() {
-        return marks;
+    public Integer getSalary() {
+        return salary;
     }
 
-    public void setMarks(Integer marks) {
-        this.marks = marks;
+    public void setSalary(Integer salary) {
+        this.salary = salary;
     }
 
     public Integer getAge() {

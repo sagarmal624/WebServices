@@ -1,5 +1,6 @@
-package com.sagarandcompany.webServices.json;
+package com.sagarandcompany.webServices.api.v1;
 
+import com.sagarandcompany.webServices.api.customAnnotation.versionMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
@@ -18,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/employee")
+@RequestMapping(value = {"${api.version.v1}" + "/employee"})
 public class EmployeeController {
     @Autowired
     EmployeeRepository employeeRepository;

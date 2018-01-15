@@ -1,4 +1,4 @@
-package com.sagarandcompany.webServices.json;
+package com.sagarandcompany.webServices.api.v1;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
