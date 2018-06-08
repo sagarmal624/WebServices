@@ -1,4 +1,4 @@
-package com.sagarandcompany.webServices.xml;
+package com.sagarandcompany.webServices.xml_json;
 
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -6,9 +6,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement(name = "person")
+@XmlRootElement(name = "student")
 @XmlAccessorType(XmlAccessType.NONE)
-public class Person {
+public class Student {
     @XmlElement
     private Long id;
     @XmlElement

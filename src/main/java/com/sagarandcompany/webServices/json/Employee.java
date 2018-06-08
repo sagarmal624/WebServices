@@ -1,12 +1,8 @@
 package com.sagarandcompany.webServices.json;
 
-import javax.persistence.*;
 import java.util.Date;
 
-@Entity()
 public class Employee {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
@@ -53,5 +49,16 @@ public class Employee {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", age=" + age +
+                ", dob=" + dob +
+                '}';
     }
 }
